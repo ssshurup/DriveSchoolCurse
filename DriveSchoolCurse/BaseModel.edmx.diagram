@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9b6216347b3b494eb50605b8be56e81f" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="SchoolBDModel.carMake" Width="1.5" PointX="3" PointY="10.5" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.carModel" Width="1.5" PointX="5.25" PointY="10.5" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.category" Width="1.5" PointX="0.75" PointY="6.625" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.discount" Width="1.5" PointX="0.75" PointY="3.75" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.drivingLesson" Width="1.5" PointX="12" PointY="8.375" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.employee" Width="1.5" PointX="9.75" PointY="10" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.post" Width="1.5" PointX="7.5" PointY="7.625" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.status" Width="1.5" PointX="5.25" PointY="7.625" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.StudentAndGroup" Width="1.5" PointX="17.25" PointY="8.375" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.Students" Width="1.5" PointX="3" PointY="6" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.studGroup" Width="1.5" PointX="15" PointY="10.25" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.theoryLesson" Width="1.5" PointX="12" PointY="11.375" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.users" Width="1.5" PointX="12.75" PointY="14.5" FillColor="Red" />
+        <EntityTypeShape EntityType="SchoolBDModel.vehicles" Width="1.5" PointX="7.5" PointY="10.25" FillColor="Red" />
+        <AssociationConnector Association="SchoolBDModel.FK_carMake_category" />
+        <AssociationConnector Association="SchoolBDModel.FK_carModel_carMake" />
+        <AssociationConnector Association="SchoolBDModel.FK_vehicles_carModel" />
+        <AssociationConnector Association="SchoolBDModel.FK_Students_category" />
+        <AssociationConnector Association="SchoolBDModel.FK_users_discount" />
+        <AssociationConnector Association="SchoolBDModel.FK_lesson_employee" />
+        <AssociationConnector Association="SchoolBDModel.FK_lesson_Students" />
+        <AssociationConnector Association="SchoolBDModel.FK__employee__idVehi__3A4CA8FD" />
+        <AssociationConnector Association="SchoolBDModel.FK_drivingLesson_employee" />
+        <AssociationConnector Association="SchoolBDModel.FK_employee_post" />
+        <AssociationConnector Association="SchoolBDModel.FK_studGroup_employee" />
+        <AssociationConnector Association="SchoolBDModel.FK_vehicles_status" />
+        <AssociationConnector Association="SchoolBDModel.FK_StudentAndGroup_Students" />
+        <AssociationConnector Association="SchoolBDModel.FK_StudentAndGroup_studGroup" />
+        <AssociationConnector Association="SchoolBDModel.FK_drivingLesson_studGroup" />
+        <AssociationConnector Association="SchoolBDModel.FK_studGroup_users" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

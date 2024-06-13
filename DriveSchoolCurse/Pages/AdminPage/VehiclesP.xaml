@@ -1,0 +1,36 @@
+﻿<Page x:Class="DriveSchoolCurse.Pages.AdminPage.VehiclesP"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DriveSchoolCurse.Pages.AdminPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="VehiclesP">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="600"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="ButtonsBarGrid">
+            <StackPanel>
+                <Button Content="Добавить транспорт" Margin="10,5" Click="Button_Click"/>
+                <Button Content="Изменить" Margin="10,5" Click="Button_Click_1"/>
+                <Button Content="Удалить" Margin="10,5" Click="Button_Click_2"/>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Bottom">
+                <Button x:Name="BackBT" Content="Назад" Margin="10,5" Click="BackBT_Click"/>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="MainGrid" Grid.Column="1">
+            <DataGrid x:Name="VehicleDG" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Гос. номер" Binding="{Binding carNumber}" Width="200"/>
+                    <DataGridTextColumn Header="Модель" Binding="{Binding carModel.name}" Width="200"/>
+                    <DataGridTextColumn Header="Категория" Binding="{Binding carModel.carMake.category.name}" Width="200"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Page>
